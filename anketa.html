@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <title>PEPSI – Anketa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 60px auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 17px;
+            line-height: 1.6;
+        }
+
+        img {
+            width: 200px;
+            margin: 20px 0;
+        }
+
+        a.button {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 30px;
+            font-size: 16px;
+            color: white;
+            background-color: #333;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        a.button:hover {
+            background-color: #555;
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+<div class="glavnimeni" id="mainMenu">
+    <div class="hamburger" id="hamburger">&#9776;</div>
+    <div class="menu-items" id="menuItems">
+        <div class="page"><a href="index.html">O Meni</a></div>
+        <div class="page"><a href="domaci.html">Domaci zadaci</a></div>
+        <div class="page"><a href="mape.html">Mape uma</a></div>
+        <div class="page"><a href="orgranizacija.html">Organizacija konferencije</a></div>
+        <div class="page"><a href="anketa.html">Google anketa</a></div>
+        <div class="page"><a href="video.html">Video predstavljanje</a></div>
+    </div>
+</div>
+    <div class="container">
+        <h1>Anketa o PEPSI proizvodu</h1>
+
+        <img src="data:image/png;base64,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" alt="Pepsi logo">
+
+        <p>
+            Pozivamo Vas da popunite kratku anketu o PEPSI proizvodu.
+            Anketa ima za cilj ispitivanje stavova potrošača, interesovanja
+            za proizvod, kao i percepcije kvaliteta i cene.
+        </p>
+
+        <p>
+            Učešće u anketi je anonimno, a prikupljeni podaci biće korišćeni
+            isključivo u obrazovne svrhe.
+        </p>
+
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSe4w8UaFsBt1iGysiezMv-yflROFYOZQzm9uzSD_ms8oMHRvw/viewform?usp=publish-editor" class="button" target="_blank">
+            Popuni anketu
+        </a>
+
+        <footer>
+            Hvala na saradnji.
+        </footer>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O meni – Marko Miletić</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f2f2f2;
+            color: #222;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 25px auto;
+            background-color: #ffffff;
+            padding: 25px;
+        }
+
+        /* HEADER */
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 20px;
+        }
+
+        .header img {
+            width: 140px;
+            height: 140px;
+            object-fit: cover;
+            border-radius: 6px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+
+        .header p {
+            margin: 6px 0;
+            font-size: 15px;
+        }
+
+        /* SECTIONS */
+        .section {
+            margin-top: 22px;
+        }
+
+        .section h2 {
+            font-size: 20px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+
+        .section p {
+            font-size: 15px;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            margin: 5px 0 10px 20px;
+        }
+
+        ul li {
+            margin-bottom: 6px;
+            font-size: 15px;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 8px 30px;
+            font-size: 15px;
+        }
+
+        /* GALERIJA */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .gallery-item p {
+            margin-top: 6px;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        footer {
+            margin-top: 30px;
+            padding-top: 15px;
+            border-top: 1px solid #ccc;
+            font-size: 14px;
+            text-align: center;
+            color: #555;
+        }
+
+        @media (max-width: 700px) {
+            .header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- PRVI MENI -->
+<div class="prvimeni">
+    <div class="prvimenidesni">
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=31.2025.ftn.cacak@gmail.com"><img src="data:image/png;base64,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" alt="IG"></a>
+        <a href="https://www.instagram.com/_mileticc.m_/"><img src="data:image/png;base64,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" alt="IG"></a>
+    </div>
+</div>
+
+<div class="glavnimeni" id="mainMenu">
+    <div class="hamburger" id="hamburger">&#9776;</div>
+    <div class="menu-items" id="menuItems">
+        <div class="page"><a href="index.html">O Meni</a></div>
+        <div class="page"><a href="domaci.html">Domaci zadaci</a></div>
+        <div class="page"><a href="mape.html">Mape uma</a></div>
+        <div class="page"><a href="orgranizacija.html">Organizacija konferencije</a></div>
+        <div class="page"><a href="anketa.html">Google anketa</a></div>
+        <div class="page"><a href="video.html">Video predstavljanje</a></div>
+    </div>
+</div>
+<div class="container">
+    
+    <div class="header">
+        <img src="slike/ja.jpg" alt="Profilna slika">
+        <div>
+            <h1>Marko Miletić</h1>
+            <p><strong>Student informacionih tehnologija</strong></p>
+            <p>Fakultet tehničkih nauka, Čačak – 1. godina</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Osnovni podaci</h2>
+        <div class="info-grid">
+            <p><strong>Ime i prezime:</strong> Marko Miletić</p>
+            <p><strong>Datum rođenja:</strong> 14.04.2006.</p>
+            <p><strong>Mesto:</strong> Čačak</p>
+            <p><strong>Studijski program:</strong> Informacione tehnologije</p>
+            <p><strong>Vrsta studija:</strong> Akademske</p>
+            <p><strong>Godina studija:</strong> Prva godina</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>O meni</h2>
+        <p>
+            Završio sam srednju tehničku školu u Čačku, smer informacione tehnologije,
+            gde sam stekao osnovna znanja iz oblasti računara, softvera i informacionih sistema.
+            Trenutno sam student prve godine akademskih studija informacionih tehnologija
+            na Fakultetu tehničkih nauka u Čačku.
+        </p>
+        <p>
+            Trenutno sam fokusiran na studije i učenje, dok sam tokom letnjeg perioda radio
+            u firmi <strong>PS Fashion</strong>, gde sam stekao radne navike, odgovornost
+            i iskustvo rada u timu.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>Obrazovanje – galerija</h2>
+
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="https://www.ftn.kg.ac.rs/docs/slike/images/FTN%20Cacak-zgrada%20800%20600.jpg" alt="FTN Čačak">
+                <p>Fakultet tehničkih nauka, Čačak</p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://www.ftn.kg.ac.rs/images/IMG-6b750bad12fbeb9aa780aba1279e16ab-V.jpg" alt="FTN Čačak">
+                <p>FTN Čačak – zgrada fakulteta</p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://tehnickacacak.edu.rs/images/skola-pocetna.webp" alt="Tehnička škola Čačak">
+                <p>Tehnička škola, Čačak</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Interesovanja</h2>
+
+        <p><strong>Stručna:</strong></p>
+        <ul>
+            <li>Programiranje</li>
+            <li>Web dizajn</li>
+            <li>Rad sa savremenim IT tehnologijama</li>
+        </ul>
+
+        <p><strong>Lična:</strong></p>
+        <ul>
+            <li>Automobili i njihovo unapređenje</li>
+            <li>Računarski hardver i softver</li>
+            <li>Sklapanje računara i instalacija operativnih sistema</li>
+            <li>Moderna rep muzika</li>
+            <li>Teretana i gledanje filmova</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Profesionalni ciljevi</h2>
+        <p>
+            Moj profesionalni cilj je da se u budućnosti bavim poslovima u oblasti
+            informacionih tehnologija, sa posebnim interesovanjem za programiranje
+            i web tehnologije.
+        </p>
+        <p>
+            Želim da kroz studije steknem stabilnu osnovu znanja i praktične veštine
+            koje će mi omogućiti dalje profesionalno usavršavanje i razvoj karijere
+            u IT sektoru.
+        </p>
+    </div>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>

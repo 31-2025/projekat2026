@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organizacija konferencije</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body { 
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #000000;
+            margin-bottom: 40px;
+        }
+
+        .doc-card {
+            background-color: #78e86ea8;
+            border: 1px solid #000000;
+            border-radius: 8px;
+            margin-bottom: 40px;
+            padding: 15px;
+            text-align: center;
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .doc-card img {
+        width: 100%;
+        height: 427px; 
+        object-fit: contain;
+        border-radius: 5px;
+        background-color: #eee; 
+    }
+
+
+        .doc-card h3 {
+            margin: 15px 0 10px 0;
+            color: #000000;
+            font-size: 24px;
+        }
+
+        .links a {
+            text-decoration: none;
+            color: #fff;
+            background-color: #007BFF;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 10px;
+            display: inline-block;
+            font-size: 16px;
+        }
+
+        .links a:hover {
+            background-color: #0056b3;
+        }
+
+        @media (max-width: 600px) {
+            .doc-card img {
+                height: 250px;
+            }
+
+            .doc-card h3 {
+                font-size: 20px;
+            }
+
+            .links a {
+                padding: 8px 15px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="glavnimeni" id="mainMenu">
+    <div class="hamburger" id="hamburger">&#9776;</div>
+    <div class="menu-items" id="menuItems">
+        <div class="page"><a href="index.html">O Meni</a></div>
+        <div class="page"><a href="domaci.html">Domaci zadaci</a></div>
+        <div class="page"><a href="mape.html">Mape uma</a></div>
+        <div class="page"><a href="orgranizacija.html">Organizacija konferencije</a></div>
+        <div class="page"><a href="anketa.html">Google anketa</a></div>
+        <div class="page"><a href="video.html">Video predstavljanje</a></div>
+    </div>
+</div>
+    <br><br><br>
+    <h1>Organizacija konferencije</h1>
+
+    <!-- Word / PDF obrazac -->
+    <div class="doc-card">
+        <img src="slike/logo.png" alt="Word dokument">
+        <h3>Elektronski obrazac za prijavu</h3>
+        <div class="links">
+            <a href="https://docs.google.com/document/d/1z70PojOnqqkGq3uyzuh6g1Ia3adyo7LJ/edit?usp=sharing&ouid=112364874155023164267&rtpof=true&sd=true" target="_blank">Pregled</a>
+            <a href="dokumenti/Elektronski obrazac za prijavu.docx" target="_blank">Preuzmi</a>
+            <a href="https://drive.google.com/drive/folders/15YdUC1XS7xkUXMY5Ejbgh8YYs8F_k-5U?usp=sharing" target="_blank">Drive</a>
+        </div>
+    </div>
+
+    <!-- Visio plan prostora -->
+    <div class="doc-card">
+        <img src="slike/plan prostora.PNG" alt="Visio plan">
+        <h3>Visio plan prostora</h3>
+        <div class="links">
+            <a href="https://ftncacak-my.sharepoint.com/:u:/g/personal/31-2025_ftn_edu_rs/IQA9O2mqCAxIRYRL8Q6omDpfAZ7OsGM-cki0Jc92obbNREI?e=IZ5eWN" target="_blank">Pregled</a>
+            <a href="dokumenti/Plan prostora.vsdx" target="_blank">Preuzmi</a>
+            <a href="https://drive.google.com/file/d/18eQ4r8_okLJO53WID1IN6Xgk3mwnE9yb/view?usp=sharing" target="_blank">Drive</a>
+        </div>
+    </div>
+
+    <!-- Visio mapa uma -->
+    <div class="doc-card">
+        <img src="slike/Mapa uma organizacije.PNG" alt="Visio mapa uma">
+        <h3>Visio mapa uma organizacije</h3>
+        <div class="links">
+            <a href="https://ftncacak-my.sharepoint.com/:u:/g/personal/31-2025_ftn_edu_rs/IQAzgzGDkm41QpgPtQ2nV4N6Aeeb0hw4rsn4s7hNj0Jo6ww?e=FwRaLY" target="_blank">Pregled</a>
+            <a href="dokumenti/MapaUmaKonfrencija.vsdx" target="_blank">Preuzmi</a>
+            <a href="https://drive.google.com/file/d/17l3ACXUe3zJfCoKclG83l1-rXdcZOaqM/view?usp=sharing" target="_blank">Drive</a>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>

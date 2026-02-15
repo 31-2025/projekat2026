@@ -1,0 +1,151 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-size: cover;
+}
+
+.prvimeni a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.prvimeni {
+    display: flex;
+    background-color: #212F3D;
+    height: 60px;
+    position: relative;
+}
+
+.prvimenidesni {
+    text-align: right;
+    padding-right: 80px;
+    padding-top: 10px;
+    flex-grow: 3;
+}
+
+.prvimenilevi {
+    text-align: left;
+    flex-grow: 1;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+.prvimenidesni a {
+    padding-right: 15px;
+    color: #CACFD2;
+    font-size: 15px;
+}
+
+.prvimenidesni img {
+    height: 30px;
+    width: 30px;
+    flex-grow: 1;
+    border-radius: 33%;
+}
+
+.prvimenidesni a:hover {
+    color: #F8C471;
+    opacity: 80%;
+    font-size: 18px;
+    transition: 400ms;
+}
+
+.drugimeni img {
+    width: 70px;
+    height: 70px;
+    margin-left: 48%;
+}
+
+.drugimeni h2 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: monaco;
+    color: #212F3D;
+}
+
+.drugimeni a {
+    text-decoration: none;
+}
+
+.glavnimeni {
+    display: flex;
+    margin-left: 22%;
+    margin-top: 30px;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+}
+
+.glavnimeni a {
+    flex-grow: 1;
+    text-align: center;
+    padding-left: 30px;
+    font-size: 20px;
+    font-family: monaco;
+    color: #212F3D;
+    text-decoration: none;
+}
+
+.glavnimeni a:hover {
+    color: #F8C471;
+    font-size: 23px;
+    transition: 400ms;
+}
+
+/* =================== HAMBURGER MENI (mobilni) =================== */
+.hamburger {
+    display: none; 
+    font-size: 30px;
+    cursor: pointer;
+    color: #212F3D;
+    padding: 10px;
+}
+
+.menu-items {
+    display: flex; 
+    width: 100%;
+}
+
+
+@media screen and (max-width: 768px) {
+    
+    .glavnimeni {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 0;
+        height: auto;
+    }
+
+    
+    .menu-items {
+        display: none; 
+        flex-direction: column;
+        width: 100%;
+        background-color: #212F3D;
+    }
+
+    .menu-items .page {
+        width: 100%;
+        text-align: left;
+        padding: 10px 20px;
+        border-bottom: 1px solid #CACFD2;
+    }
+
+    .menu-items .page a {
+        color: #CACFD2;
+        font-size: 18px;
+    }
+
+    .menu-items .page a:hover {
+        color: #F8C471;
+        font-size: 20px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
